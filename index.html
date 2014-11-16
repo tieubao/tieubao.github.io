@@ -1,0 +1,58 @@
+<html class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Homepage | Tieu Bao</title>
+	<link rel="shortcut icon" href="img/favicon.ico">    
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/link.css" type="text/css" charset="utf-8">    
+	<link rel="stylesheet" href="css/jquery.maximage.min.css" type="text/css" media="screen" title="CSS" charset="utf-8">
+
+	<script src="js/jquery.cycle.all.min.js" type="text/javascript"></script>
+	<script src="js/jquery.maximage.min.js" type="text/javascript"></script>
+</head>
+
+
+<body style="" class="">
+	<div id="maximage" class="mc-cycle">
+		<img src="img/af.JPG">
+		<img src="img/sky.JPG">
+		<img src="img/stone.JPG">
+		<img src="img/track.JPG">
+	</div>
+
+	<div class="container">
+		<section>
+			<headmsg>
+				<h1>Developer</h1>
+				<h2>Born in Vietnam. Since 1991. </h2>
+			</headmsg>
+
+			<div class="in-slide-content" style="">
+				<nav class="cl-effect-14" id="cl-effect-14">
+					<a href="https://github.com/tieubao">Coding</a>
+					<a href="/writing">Writing</a>
+                    <a href="/life">Life</a>    
+                </nav>
+			</div>
+
+		</section>
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#maximage').maximage({
+			onFirstImageLoaded: function(){
+				$('#cycle-loader').hide();
+				$('#maximage').fadeIn('slow');
+			}
+		});
+
+		$('.in-slide-content').hide();
+		$('.in-slide-content').delay(1500).fadeIn();
+	});
+	</script>
+
+</body>
+</html>
