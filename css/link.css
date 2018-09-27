@@ -18,20 +18,19 @@ body {
 }
 .container  h1 {
     font-family: Lato;
-    font-size: 6.00em;
+    font-size: 5.00em;
     font-weight: 100;
 }
 .container  h2 {
     margin-top: -70px;
     /* font-family: Lato; */
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.25em;
-    filter: alpha(opacity=70);
+    filter: alpha(opacity=60);
     zoom: 1.0;
     -moz-opacity:0.50;
     opacity:0.50;
 }
-
 
 nav a {
     position: relative;
@@ -116,4 +115,12 @@ nav a:focus {
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%);
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) { 
+    .container > section {
+        padding: 2em 0em;
+    }
 }
